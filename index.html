@@ -2,7 +2,7 @@
 <script type="text/processing" data-processing-target="mycanvas">
 
 // @pjs preload must be used to preload the image so that it will be available when used in the sketch  
-/* @pjs preload="data/fall.png"; */
+/* @pjs preload="data/fall.png, data/jump.png"; */
 
 void setup() {
 
@@ -26,7 +26,7 @@ Beaver.prototype.draw = function() {
 };
 
 Beaver.prototype.hop = function() {
-    this.img = loadImage("data/fall.png");
+    this.img = loadImage("data/jump.png");
     this.y -= 5;
 };
 
