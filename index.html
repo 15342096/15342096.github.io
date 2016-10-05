@@ -2,8 +2,7 @@
 <script type="text/processing" data-processing-target="mycanvas">
 
 // @pjs preload must be used to preload the image so that it will be available when used in the sketch  
-/* @pjs preload="data/fall.png, data/jump.png"; */
-
+/* @pjs preload="data/fall.png"; */
 
 void setup() {
 
@@ -27,7 +26,7 @@ Beaver.prototype.draw = function() {
 };
 
 Beaver.prototype.hop = function() {
-    this.img = loadImage("data/jump.png");
+    this.img = loadImage("data/fall.png");
     this.y -= 5;
 };
 
@@ -50,7 +49,7 @@ var Stick = function(x, y) {
 };
 
 Stick.prototype.draw = function() {
-    fill(66, 250, 5);
+    fill(50, 250, 5);
     rectMode(CENTER);
     rect(this.x, this.y, 20, 40);
     fill(255, 255, 255);
@@ -73,7 +72,7 @@ for (var i = 0; i < 25; i++) {
 
 draw = function() {
     
-    background(230, 254, 255);
+    background(96, 124, 125);
     fill(130, 79, 43);
     rectMode(CORNER);
     rect(0, height*0.90, width, height*0.10);
