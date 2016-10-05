@@ -13,7 +13,7 @@ var code = Math.round(Math.random()*10000);
 var Beaver = function(x, y) {
     this.x = x;
     this.y = y;
-    this.img = loadImage("data/jump.jpg");
+    this.img = loadImage("data/jump.png");
     this.sticks = 0;
 };
 
@@ -24,12 +24,12 @@ Beaver.prototype.draw = function() {
 };
 
 Beaver.prototype.hop = function() {
-    this.img = loadImage("data/jump.jpg");
+    this.img = loadImage("data/jump.png");
     this.y -= 5;
 };
 
 Beaver.prototype.fall = function() {
-    this.img = loadImage("data/fall.jpg");
+    this.img = loadImage("data/fall.png");
     this.y += 5;
 };
 
