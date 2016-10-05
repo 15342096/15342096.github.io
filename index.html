@@ -87,10 +87,11 @@ draw = function() {
     fill(28, 26, 28);
     text("Score: " + Math.round(beaver.sticks/sticks.length*100) + "%", 10, 20);
     
-    if (beaver.sticks/sticks.length >= 1) {
+    if (beaver.sticks/sticks.length >= 0.1) {
         textSize(36);
         text("YOU WIN!!!!", 300, 200);
-        textSize(18);
+        fill(0,250,154);
+        textSize(50);
         text("Enter this number: " + code + " To get 25% discount!", 5, 300);
     }
     
